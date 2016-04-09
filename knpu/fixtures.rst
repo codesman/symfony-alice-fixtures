@@ -58,12 +58,13 @@ Installing Alice via HauteLookAliceBundle
 -----------------------------------------
 
 To install Alice we could do it directly but instead I'm going to use an
-awesome bundle called `HautelookAliceBundle`_. Let's grab the ``composer require``
-command from it's README and paste that into the terminal:
+awesome bundle called `HautelookAliceBundle`_. The newest version of this bundle
+can't be installed in this project because it requires a newer version of symfony
+so lets use this command to install the version that works with this project:
 
 .. code-block:: bash
 
-    composer require hautelook/alice-bundle
+    composer require hautelook/alice-bundle:0.1.5
 
 This bundle is a thin layer around the Alice library, which is something that
 let's us load fixtures with yml files, and the same DoctrineFixturesBundle
